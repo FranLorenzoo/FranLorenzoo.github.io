@@ -1,0 +1,21 @@
+:root{
+    --color-main: rgba(12, 148, 28, 0.5);
+    --theme-color: rgb(103, 153, 108);
+    --text-color:black;
+    --text-deco:rgba(50, 92, 54,0.8);
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--theme-color);
+    color:var(--text-color);
+}
+
+a{
+    text-decoration: none;
+    color:var(--text-color)
+}
+
+html{
+    scroll-behavior: smooth;
+}

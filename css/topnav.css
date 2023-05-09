@@ -1,0 +1,68 @@
+:root{
+    --color-main: rgba(12, 148, 28, 0.5);
+    --theme-color: rgb(103, 153, 108);
+    --text-color:black;
+    --text-deco:rgba(50, 92, 54,0.8);
+}
+
+.tophead{
+    display:fixed;
+    box-shadow: 0 5px 4px var(--text-deco);
+    background-color: var(--theme-color);
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+.logo h1{
+    padding:0;
+    margin:0;
+    text-align: center;
+    font-size: 30px;
+    color: var(--text-deco);
+}
+.menu{
+    list-style: none;
+    display:flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu li{
+    padding:0px 5px;
+}
+
+.menu a{
+    line-height: 50px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu a::after{
+    content:"";
+    background-color: var(--text-deco);
+    position: absolute;
+    left:0;
+    top:100%;
+    width:100%;
+    height:2px;
+    
+    opacity: 0;
+}
+
+.menu a:hover {
+    color: var(--text-deco)
+}
+
+.menu a.selected::after,.menu a:hover:after {
+    opacity: 0.8;
+}
